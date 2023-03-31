@@ -1,14 +1,14 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faCoffee,
-  faBookmark,
-  faBookBookmark,
-} from "@fortawesome/free-solid-svg-icons";
+import { faBookmark } from "@fortawesome/free-solid-svg-icons";
+import dateFormat from "dateformat";
 
 const Blog = (props) => {
-  console.log(props);
-  const { cover_photo, title, user_pic, user_name, publish_date } = props.blog;
+  // console.log(props);
+  const { cover_photo, title, user_pic, user_name, publish_date, tags, date } =
+    props.blog;
+  console.log(dateFormat(date, "dS mmmm, yyyy"));
+  // console.log(date);
   return (
     <div>
       <div className="card w-[90%] mx-auto mt-8 bg-base-100 shadow-xl">
@@ -26,7 +26,7 @@ const Blog = (props) => {
                 <br />
                 <span>
                   <small className="font-bold text-gray-600">
-                    {publish_date}
+                    {dateFormat(date, "dS mmmm, yyyy")}
                   </small>
                 </span>
               </div>
@@ -39,8 +39,13 @@ const Blog = (props) => {
           </div>
 
           <h2 className="card-title">{title}</h2>
+          <div className="flex gap-2">
+            {tags.map((tag) => (
+              <span className="text-gray-500 underline">#{tag}</span>
+            ))}
+          </div>
           <div className="card-actions justify-start">
-            <a className="link link-primary">Mark as read</a>{" "}
+            <a className="link link-primary">Mark as read</a>
           </div>
         </div>
       </div>
