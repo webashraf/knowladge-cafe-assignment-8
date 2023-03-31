@@ -2,7 +2,7 @@ import React from 'react';
 
 const Sidebar = () => {
           return (
-                    <div>
+                    <div className='border border-red-100'>
                               <h1 className="text-2xl">Side bar</h1>
                     </div>
           );
