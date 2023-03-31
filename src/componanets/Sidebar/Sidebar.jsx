@@ -1,11 +1,11 @@
-import React from 'react';
+import React from "react";
 
-const Sidebar = () => {
-          return (
-                    <div className='border border-red-100'>
-                              <h1 className="text-2xl">Side bar</h1>
-                    </div>
-          );
+const Sidebar = (props) => {
+  return (
+    <div className="border border-red-100">
+      <p>{props.bookmark}</p>
+    </div>
+  );
 };
 
 export default Sidebar;

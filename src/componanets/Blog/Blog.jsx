@@ -1,14 +1,14 @@
-import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBookmark } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import dateFormat from "dateformat";
+import React from "react";
 
 const Blog = (props) => {
   // console.log(props);
   const { cover_photo, title, user_pic, user_name, publish_date, tags, date } =
     props.blog;
-  console.log(dateFormat(date, "dS mmmm, yyyy"));
-  // console.log(date);
+  const handleBookmark = props.handleBookmark;
+
   return (
     <div>
       <div className="card w-[90%] mx-auto mt-8 bg-base-100 shadow-xl">
@@ -33,7 +33,11 @@ const Blog = (props) => {
             </div>
             <div>
               <span>
-                05 min read <FontAwesomeIcon icon={faBookmark} />
+                05 min read{" "}
+                <FontAwesomeIcon
+                  onClick={() => handleBookmark(title)}
+                  icon={faBookmark}
+                />
               </span>
             </div>
           </div>
