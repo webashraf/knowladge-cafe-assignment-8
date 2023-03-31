@@ -31,11 +31,11 @@ const Blogs = () => {
           ></Blog>
         ))}
       </div>
-      <div>
-        <h1 className="text-xl text-purple-500 font-semibold border border-purple-600 bg-purple-200 bg-opacity-60 rounded-md p-5">
+      <div className="bg-gray-300 rounded-md">
+        <h1 className="text-xl text-purple-500 font-semibold border border-purple-600 bg-purple-200 bg-opacity-60 rounded-md rounded-b-none p-5">
           Spent time on read : 177 min
         </h1>
-        <div className="mt-5 bg-gray-300 p-5">
+        <div className="mt-5  p-5">
           <h2 className="font-bold">Bookmarked Blogs : 8</h2>
         </div>
         {bookmarks.map((bookmark) => (
