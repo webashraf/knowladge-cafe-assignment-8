@@ -5,9 +5,19 @@ import React from "react";
 
 const Blog = (props) => {
   // console.log(props);
-  const { cover_photo, title, user_pic, user_name, publish_date, tags, date } =
-    props.blog;
+  const {
+    cover_photo,
+    title,
+    user_pic,
+    user_name,
+    publish_date,
+    tags,
+    date,
+    read_time,
+  } = props.blog;
   const handleBookmark = props.handleBookmark;
+
+  const markAsReadHandle = props.markAsReadHandle;
 
   return (
     <div>
@@ -33,7 +43,7 @@ const Blog = (props) => {
             </div>
             <div>
               <span>
-                05 min read{" "}
+                0{read_time} min read{" "}
                 <FontAwesomeIcon
                   onClick={() => handleBookmark(title)}
                   icon={faBookmark}
@@ -49,7 +59,12 @@ const Blog = (props) => {
             ))}
           </div>
           <div className="card-actions justify-start">
-            <a className="link link-primary">Mark as read</a>
+            <a
+              className="link link-primary"
+              onClick={() => markAsReadHandle(read_time)}
+            >
+              Mark as read
+            </a>
           </div>
         </div>
       </div>

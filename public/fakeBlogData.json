@@ -1,7 +1,7 @@
 [
   {
     "id": "6425ca20848770f63e07f585",
-    "index": 0,
+    "read_time": 5,
     "date": "Sun Nov 01 1981 07:33:53 GMT+0600 (Bangladesh Standard Time)",
 
     "user_name": "Mr. John",
@@ -16,7 +16,7 @@
   },
   {
     "id": "6425ca20f3937f542c25d750",
-    "index": 1,
+    "read_time": 3,
     "date": "Thu Jan 05 1978 07:33:34 GMT+0600 (Bangladesh Standard Time)",
     "user_name": "Crissy costanza",
     "user_pic": "https://images.pexels.com/photos/1520760/pexels-photo-1520760.jpeg?auto=compress&cs=tinysrgb&w=1600",
@@ -30,7 +30,7 @@
   },
   {
     "id": "6425ca20f3a134e943e0b5e5",
-    "index": 2,
+    "read_time": 9,
     "date": "Fri Aug 18 2006 15:13:58 GMT+0600 (Bangladesh Standard Time)",
     "user_name": "Taiwan",
     "user_pic": "https://images.pexels.com/photos/3021563/pexels-photo-3021563.jpeg?auto=compress&cs=tinysrgb&w=400",
@@ -44,7 +44,7 @@
   },
   {
     "id": "6425ca203f5da1789b124e07",
-    "index": 3,
+    "read_time": 2,
     "date": "Sat Aug 05 1972 02:02:40 GMT+0600 (Bangladesh Standard Time)",
     "user_name": "Arisu",
     "user_pic": "https://images.pexels.com/photos/10311994/pexels-photo-10311994.jpeg?auto=compress&cs=tinysrgb&w=1600",
